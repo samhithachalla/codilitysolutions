@@ -13,4 +13,12 @@ def solution(A):
         return(max(A)+1)
     else:
         return(1)
+
+def solution(A):
+    N=len(A)
+    diff = (((N+1)*(N+2))/2)-sum(A)
+    if diff==0:
+        return(N+1)
+    else:
+        return(diff)
     
